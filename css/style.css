@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Mali:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+.fondoArg{
+ background-image: url(./img/arg.webp);  
+}
+/*presentacion*/
+
+.card{
+    width: 400px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 15px;
+    box-shadow: 7px 13px 37px rgb(0, 0, 0, .6);
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+
+.foto{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.foto::before{
+    content: '';
+    position: absolute;
+    border-top: 30px solid transparent;
+    border-left: 400px solid white;
+    bottom: 0;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+}
+
+.section1 {
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+h2 .name{
+    margin: .5em 0;
+}
+
+.section1 p {
+    margin: 1em 0;
+}
+
+.ul .il {
+    list-style: none;
+    display: inline-block;
+    margin: .5em .2em;
+}
+.linkedin img{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: gray;
+    width: 30px;
+    height: 30px;
+    line-height: 30px !important;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+
+.ul .il img:hover{
+    transform: scale(1.2);
+}
+
+.foot{
+    width: 100%;
+    height: 90px;
+    background: #314652;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.foot::before{
+    content: '';
+    position: absolute;
+    border-top: 30px solid transparent;
+    border-left: 300px solid white;
+    bottom: 0;
+}
+
+.foot p{
+    padding: 30px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+header.abajo{
+    background: #ffffff;
+    padding: 15px 20px;
+}
+header .logo{
+    position: relative;
+    color: #000000;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    font-size: 13px;
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 540;
+    transition: 0.7s;
+}
+
+header ul li a:hover{
+    background-color: #0c9840;
+}
+
+
+header.abajo .logo,
+header.abajo ul li a{
+    color: #000000;
+}
+
+.categorias a {
+    background-color: #d30808;
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+h2,h1 {
+    color: #000000;
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: -4px -1px 3px rgba(68, 93, 128, 1);
+}
+
+h3 {
+    color: #0047eb;
+    font-weight: 900;
+}
+
+.italica {
+    font-style: italic;
+    font-family: 'Kalam', cursive;
+}
+
+.carne {
+    font-weight: bold;
+}
+
+.central {
+font-weight: bold;
+}
+
+.argentina {
+    font-weight: bold;
+}
+
+.provincias {
+    font-weight: bold;
+}
+
+.mesopotamia {
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+    color: #6a1515cb;
+}
+/*galeria menu*/
+
+.parent {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    }  
+
+.menu:nth-child(1){
+     grid-column-start: span 2;
+}
+
+.menu:nth-child(4){
+    grid-column-start: span 2;
+}
+
+@media(max-widt:991px){
+    .parent2{
+        padding: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menu:nth-child(1){
+        grid-column-start: span 1;
+    }
+    .menu:nth-child(4){
+        grid-column-start: span 1;
+    }
+}
+
+.boxmenu{
+    width: 360px;
+    height: 270px;
+    overflow: hidden;
+    transition: all 500 ms ease;
+    border-radius: 5px;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.50);
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.boxmenu img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease;
+}
+.menu:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.local{
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
